@@ -1,0 +1,68 @@
+{
+  "configuration": {
+    "className": "com.liferay.headless.admin.list.type.dto.v1_0.ListTypeDefinition",
+    "parameters": {
+      "containsHeaders": "true",
+      "createStrategy": "UPSERT",
+      "onErrorFail": "false",
+      "updateStrategy": "UPDATE"
+    },
+    "taskItemDelegateName": "DEFAULT"
+  },
+  "items": [
+    {
+      "system": false,
+      "name_i18n": {
+        "en-US": "Expense Type"
+      },
+      "name": "Expense Type",
+      "listTypeEntries": [
+        {
+          "name_i18n": {
+            "en-US": "Airfare"
+          },
+          "name": "Airfare",
+          "type": "",
+          "key": "airfare"
+        }
+      ],
+      "externalReferenceCode": "T4T14_SMART_EXPENSE_TYPE"
+    },
+    {
+      "system": false,
+      "name_i18n": {
+        "en-US": "Payment Type"
+      },
+      "name": "Payment Type",
+      "listTypeEntries": [
+        {
+          "name_i18n": {
+            "en-US": "Direct"
+          },
+          "name": "Direct",
+          "type": "",
+          "key": "direct"
+        }
+      ],
+      "externalReferenceCode": "T4T14_SMART_EXPENSE_PAYMENT_TYPE"
+    },
+    {
+      "system": false,
+      "name_i18n": {
+        "en-US": "Currency"
+      },
+      "name": "Currency",
+      "listTypeEntries": [
+        {
+          "name_i18n": {
+            "en-US": "$"
+          },
+          "name": "$",
+          "type": "",
+          "key": "dollar"
+        }
+      ],
+      "externalReferenceCode": "T4T14_SMART_EXPENSE_CURRENCY"
+    }
+  ]
+}

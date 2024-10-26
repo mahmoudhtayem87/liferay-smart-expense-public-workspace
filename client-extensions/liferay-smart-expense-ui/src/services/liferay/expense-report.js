@@ -82,7 +82,7 @@ export const getReportExpensesPage = (reportId,page,pageSize) => {
 
     let request_config = {
         method: 'GET',
-        url:`${config.reportEndPoint}${reportId}/reportExpenses?page=${page}&pageSize=${pageSize}`,
+        url:`${config.reportEndPoint}${reportId}/expense?page=${page}&pageSize=${pageSize}`,
     };
 
     return request(request_config);

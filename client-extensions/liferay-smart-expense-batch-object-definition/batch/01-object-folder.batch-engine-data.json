@@ -1,0 +1,21 @@
+{
+  "configuration": {
+    "className": "com.liferay.object.admin.rest.dto.v1_0.ObjectFolder",
+    "parameters": {
+      "containsHeaders": "true",
+      "createStrategy": "UPSERT",
+      "importStrategy": "ON_ERROR_FAIL",
+      "taskItemDelegateName": "DEFAULT",
+      "updateStrategy": "UPDATE"
+    }
+  },
+  "items": [
+    {
+      "name": "SmartExpense",
+      "label": {
+        "en_US": "Smart Expense"
+      },
+      "externalReferenceCode": "T4T14_SMART_EXPENSE"
+    }
+  ]
+}

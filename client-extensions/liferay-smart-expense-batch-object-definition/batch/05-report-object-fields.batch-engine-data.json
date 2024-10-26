@@ -1,0 +1,192 @@
+{
+  "configuration": {
+    "className": "com.liferay.object.admin.rest.dto.v1_0.ObjectField",
+    "parameters": {
+      "containsHeaders": "true",
+      "createStrategy": "INSERT",
+      "externalReferenceCode": "T4T14_EXPENSE_REPORT",
+      "onErrorFail": "false",
+      "updateStrategy": "UPDATE"
+    },
+    "taskItemDelegateName": "DEFAULT"
+  },
+  "items": [
+    {
+      "indexed": false,
+      "localized": false,
+      "objectFieldSettings": [
+        {
+          "name": "objectRelationshipName",
+          "value": "expense"
+        },
+        {
+          "name": "function",
+          "value": "SUM"
+        },
+        {
+          "name": "objectFieldName",
+          "value": "amount"
+        }
+      ],
+      "readOnly": "true",
+      "DBType": "String",
+      "label": {
+        "en_US": "Total Amount"
+      },
+      "type": "String",
+      "required": false,
+      "indexedAsKeyword": false,
+      "system": false,
+      "indexedLanguageId": "",
+      "unique": false,
+      "name": "totalAmount",
+      "state": false,
+      "businessType": "Aggregation",
+      "readOnlyConditionExpression": ""
+    },
+    {
+      "indexed": false,
+      "localized": false,
+      "objectFieldSettings": [
+        {
+          "name": "function",
+          "value": "SUM"
+        },
+        {
+          "name": "objectRelationshipName",
+          "value": "expense"
+        },
+        {
+          "name": "objectFieldName",
+          "value": "discount"
+        },
+        {
+          "name": "filters",
+          "value": []
+        }
+      ],
+      "readOnly": "true",
+      "DBType": "String",
+      "label": {
+        "en_US": "Total Discount"
+      },
+      "type": "String",
+      "required": false,
+      "indexedAsKeyword": false,
+      "system": false,
+      "indexedLanguageId": "",
+      "unique": false,
+      "name": "totalDiscount",
+      "state": false,
+      "businessType": "Aggregation",
+      "readOnlyConditionExpression": ""
+    },
+    {
+      "indexed": false,
+      "localized": false,
+      "objectFieldSettings": [
+        {
+          "name": "function",
+          "value": "SUM"
+        },
+        {
+          "name": "objectRelationshipName",
+          "value": "expense"
+        },
+        {
+          "name": "objectFieldName",
+          "value": "tips"
+        },
+        {
+          "name": "filters",
+          "value": []
+        }
+      ],
+      "readOnly": "true",
+      "DBType": "String",
+      "label": {
+        "en_US": "Total Tip"
+      },
+      "type": "String",
+      "required": false,
+      "indexedAsKeyword": false,
+      "system": false,
+      "indexedLanguageId": "",
+      "unique": false,
+      "name": "totalTip",
+      "state": false,
+      "businessType": "Aggregation",
+      "readOnlyConditionExpression": ""
+    },
+    {
+      "indexed": false,
+      "localized": false,
+      "objectFieldSettings": [
+        {
+          "name": "objectRelationshipName",
+          "value": "expense"
+        },
+        {
+          "name": "function",
+          "value": "SUM"
+        },
+        {
+          "name": "objectFieldName",
+          "value": "tax"
+        },
+        {
+          "name": "filters",
+          "value": []
+        }
+      ],
+      "readOnly": "true",
+      "DBType": "String",
+      "label": {
+        "en_US": "Total Tax"
+      },
+      "type": "String",
+      "required": false,
+      "indexedAsKeyword": false,
+      "system": false,
+      "indexedLanguageId": "",
+      "unique": false,
+      "name": "totalTax",
+      "state": false,
+      "businessType": "Aggregation",
+      "readOnlyConditionExpression": ""
+    },
+    {
+      "indexed": false,
+      "localized": false,
+      "objectFieldSettings": [
+        {
+          "name": "function",
+          "value": "COUNT"
+        },
+        {
+          "name": "objectRelationshipName",
+          "value": "expense"
+        },
+        {
+          "name": "filters",
+          "value": []
+        }
+      ],
+      "readOnly": "true",
+      "DBType": "String",
+      "label": {
+        "en_US": "Expenses Count"
+      },
+      "type": "String",
+      "required": false,
+      "indexedAsKeyword": false,
+      "system": false,
+      "indexedLanguageId": "",
+      "unique": false,
+      "name": "expensesCount",
+      "state": false,
+      "businessType": "Aggregation",
+      "readOnlyConditionExpression": ""
+    }
+  ]
+}

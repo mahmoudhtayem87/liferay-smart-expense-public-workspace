@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import ClayForm from "@clayui/form";
 import {getReportsPage, postReport} from "../services/liferay/expense-report";
 import {getCurrenciesPickListEntries} from "../services/liferay/pick-list";
-import {showError, showSuccess} from "../utils/util";
+import {getCurrentUserId, showError, showSuccess} from "../utils/util";
 
 const AddReport = forwardRef((props, ref) => {
 
@@ -30,6 +30,7 @@ const AddReport = forwardRef((props, ref) => {
     const { errors, handleChange, handleSubmit, touched, values } = useFormik({
         initialValues: {
             title: '',
+            r_userreports_userId: getCurrentUserId(),
             description: '',
             startDate: '',
             endDate: '',

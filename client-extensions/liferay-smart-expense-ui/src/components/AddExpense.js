@@ -72,7 +72,7 @@ const AddExpense = forwardRef((props, ref) => {
         initialValues: {
             vendorDescription: '',
             receipt: null,
-            r_reportExpenses_c_expenseReportId:reportId,
+            r_expense_c_expenseReportId:reportId,
             transactionDate: '',
             comment: '',
             amount: '',

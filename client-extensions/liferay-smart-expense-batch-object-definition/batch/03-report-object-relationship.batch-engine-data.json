@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "className": "com.liferay.object.admin.rest.dto.v1_0.ObjectRelationship",
+    "parameters": {
+      "containsHeaders": "true",
+      "createStrategy": "INSERT",
+      "externalReferenceCode": "T4T14_EXPENSE_REPORT",
+      "onErrorFail": "false",
+      "updateStrategy": "UPDATE"
+    },
+    "taskItemDelegateName": "DEFAULT"
+  },
+  "items": [
+    {
+      "objectDefinitionSystem2": false,
+      "parameterObjectFieldName": "",
+      "parameterObjectFieldId": 0,
+      "label": {
+        "en_US": "Report Expense"
+      },
+      "reverse": false,
+      "type": "oneToMany",
+      "externalReferenceCode": "T4T14_ReportToExpense",
+      "objectDefinitionModifiable2": true,
+      "system": false,
+      "name": "expense",
+      "deletionType": "cascade",
+      "objectDefinitionExternalReferenceCode1": "T4T14_EXPENSE_REPORT",
+      "objectDefinitionExternalReferenceCode2": "T4T14_EXPENSE_ITEM",
+      "objectDefinitionName2": "ExpenseItem"
+    }
+  ]
+}

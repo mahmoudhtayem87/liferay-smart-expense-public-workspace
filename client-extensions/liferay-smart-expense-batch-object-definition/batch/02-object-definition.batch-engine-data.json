@@ -1,0 +1,496 @@
+{
+  "configuration": {
+    "className": "com.liferay.object.admin.rest.dto.v1_0.ObjectDefinition",
+    "parameters": {
+      "containsHeaders": "true",
+      "createStrategy": "UPSERT",
+      "importStrategy": "ON_ERROR_FAIL",
+      "taskItemDelegateName": "DEFAULT",
+      "updateStrategy": "UPDATE"
+    }
+  },
+  "items": [
+    {
+      "objectFolderExternalReferenceCode": "T4T14_SMART_EXPENSE",
+      "externalReferenceCode": "T4T14_EXPENSE_ITEM",
+      "objectFields": [
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "acceptedFileExtensions",
+              "value": "jpeg, jpg, pdf, png"
+            },
+            {
+              "name": "maximumFileSize",
+              "value": 100
+            },
+            {
+              "name": "fileSource",
+              "value": "userComputer"
+            },
+            {
+              "name": "showFilesInDocumentsAndMedia",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Long",
+          "label": {
+            "en_US": "Receipt"
+          },
+          "type": "Long",
+          "required": true,
+          "externalReferenceCode": "66162770-4c61-3a9f-badf-fb34ed4b1c64",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "receipt",
+          "state": false,
+          "businessType": "Attachment",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "Date",
+          "label": {
+            "en_US": "Transaction Date"
+          },
+          "type": "Date",
+          "required": true,
+          "externalReferenceCode": "47096f86-7585-10f6-9860-6d664584d3a5",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "transactionDate",
+          "state": false,
+          "businessType": "Date",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "Vendor Description"
+          },
+          "type": "Clob",
+          "required": false,
+          "externalReferenceCode": "6a92214d-73f8-8fe1-a05a-a7ddb4dc6c12",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "vendorDescription",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "Comment"
+          },
+          "type": "Clob",
+          "required": false,
+          "externalReferenceCode": "891cb43c-100c-4030-27e8-aa7cf9b019b3",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "comment",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "BigDecimal",
+          "label": {
+            "en_US": "Amount"
+          },
+          "type": "BigDecimal",
+          "required": true,
+          "externalReferenceCode": "2f927e2e-c39a-d66b-159b-c1a0e679de5e",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "amount",
+          "state": false,
+          "businessType": "PrecisionDecimal",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "Business Purpose"
+          },
+          "type": "Clob",
+          "required": true,
+          "externalReferenceCode": "7abdea9a-4c6f-3337-9ca7-18bbb5e79280",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "businessPurpose",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "listTypeDefinitionExternalReferenceCode": "T4T14_SMART_EXPENSE_TYPE",
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "Expense Type"
+          },
+          "type": "String",
+          "required": true,
+          "externalReferenceCode": "64582e1c-3791-2680-fa59-f01f18ed1278",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "expenseType",
+          "state": false,
+          "businessType": "Picklist",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "listTypeDefinitionExternalReferenceCode": "T4T14_SMART_EXPENSE_PAYMENT_TYPE",
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "Payment Type"
+          },
+          "type": "String",
+          "required": true,
+          "externalReferenceCode": "db86e35a-0aa5-cd66-e808-d7f6548d9ca0",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "paymentType",
+          "state": false,
+          "businessType": "Picklist",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "listTypeDefinitionExternalReferenceCode": "T4T14_SMART_EXPENSE_CURRENCY",
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "Currency"
+          },
+          "type": "String",
+          "required": true,
+          "externalReferenceCode": "8b823204-14fb-8538-d0b7-b79b2d1c134a",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "currency",
+          "state": false,
+          "businessType": "Picklist",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "Vendor Address"
+          },
+          "type": "Clob",
+          "required": false,
+          "externalReferenceCode": "2d7b06ff-0af0-9e16-0591-1356c16186c7",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "vendorAddress",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "BigDecimal",
+          "label": {
+            "en_US": "Tax"
+          },
+          "type": "BigDecimal",
+          "required": false,
+          "externalReferenceCode": "e1fc0637-e03c-6234-5be0-2b46a2565165",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "tax",
+          "state": false,
+          "businessType": "PrecisionDecimal",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "BigDecimal",
+          "label": {
+            "en_US": "Discount"
+          },
+          "type": "BigDecimal",
+          "required": false,
+          "externalReferenceCode": "e91d0ef1-6127-3002-e254-b141c0628247",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "discount",
+          "state": false,
+          "businessType": "PrecisionDecimal",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "BigDecimal",
+          "label": {
+            "en_US": "Tips"
+          },
+          "type": "BigDecimal",
+          "required": false,
+          "externalReferenceCode": "69110af2-007b-f215-8cc1-c564f44ea2ed",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "tips",
+          "state": false,
+          "businessType": "PrecisionDecimal",
+          "readOnlyConditionExpression": ""
+        }
+      ],
+      "restContextPath": "/o/c/expenseitems",
+      "scope": "site",
+      "portlet": false,
+      "modifiable": true,
+      "parameterRequired": false,
+      "enableObjectEntryHistory": false,
+      "titleObjectFieldName": "id",
+      "active": true,
+      "defaultLanguageId": "en_US",
+      "label": {
+        "en_US": "Expense Item"
+      },
+      "pluralLabel": {
+        "en_US": "Expense Items"
+      },
+      "system": false,
+      "name": "ExpenseItem",
+      "status": {
+        "label_i18n": "Approved",
+        "code": 0,
+        "label": "approved"
+      }
+    },
+    {
+      "objectFolderExternalReferenceCode": "T4T14_SMART_EXPENSE",
+      "externalReferenceCode": "T4T14_EXPENSE_REPORT",
+      "objectFields": [
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "Date",
+          "label": {
+            "en_US": "Start Date"
+          },
+          "type": "Date",
+          "required": true,
+          "externalReferenceCode": "d9a7c13c-8768-1673-04f9-5149533c2b2a",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "startDate",
+          "state": false,
+          "businessType": "Date",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "Date",
+          "label": {
+            "en_US": "End Date"
+          },
+          "type": "Date",
+          "required": false,
+          "externalReferenceCode": "2521ca83-9bf3-1a5d-fee0-bee36437e55a",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "endDate",
+          "state": false,
+          "businessType": "Date",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "Title"
+          },
+          "type": "String",
+          "required": true,
+          "externalReferenceCode": "93c24dc3-9ea9-c38d-cd9f-50470ccb4050",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "title",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "Description"
+          },
+          "type": "Clob",
+          "required": false,
+          "externalReferenceCode": "e3e243eb-2748-6a16-986a-d5c440ef9d6f",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "description",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "listTypeDefinitionExternalReferenceCode": "T4T14_SMART_EXPENSE_CURRENCY",
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "Report Currency "
+          },
+          "type": "String",
+          "required": true,
+          "externalReferenceCode": "5d464575-98c9-8a2d-f99e-2012f5c8062a",
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "reportCurrency",
+          "state": false,
+          "businessType": "Picklist",
+          "readOnlyConditionExpression": ""
+        }
+      ],
+      "restContextPath": "/o/c/expensereports",
+      "scope": "site",
+      "portlet": false,
+      "modifiable": true,
+      "parameterRequired": false,
+      "enableObjectEntryHistory": true,
+      "titleObjectFieldName": "id",
+      "active": true,
+      "defaultLanguageId": "en_US",
+      "label": {
+        "en_US": "Expense Report"
+      },
+      "panelCategoryKey": "",
+      "pluralLabel": {
+        "en_US": "Expense Reports"
+      },
+      "system": false,
+      "enableObjectEntryDraft": true,
+      "name": "ExpenseReport",
+      "status": {
+        "label_i18n": "Approved",
+        "code": 0,
+        "label": "approved"
+      }
+    }
+  ]
+}

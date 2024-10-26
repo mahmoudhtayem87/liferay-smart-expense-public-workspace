@@ -28,6 +28,12 @@ export const getSelectedLanguage = () => {
     return Liferay.ThemeDisplay.getLanguageId().split('_')[0];
 }
 
+export const getCurrentUserId = () => {
+
+    return Liferay.ThemeDisplay.getUserId();
+
+}
+
 export function showSuccess(
     title,
     message = 'The request has been successfully completed.'
