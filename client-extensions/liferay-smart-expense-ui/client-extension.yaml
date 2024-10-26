@@ -1,0 +1,25 @@
+assemble:
+  - from: build/static
+    into: static
+liferay-smart-expense-ui-reports-list:
+  friendlyURLMapping: liferay-smart-expense-ui-reports-list
+  htmlElementName: liferay-smart-expense-ui-reports-list
+  name: 'Smart Expense - Report Lists'
+  instanceable: false
+  portletCategoryName: category.client-extensions
+  type: customElement
+  urls:
+    - js/main.*.js
+  useESM: true
+liferay-smart-expense-ui-dashboard:
+  friendlyURLMapping: liferay-smart-expense-ui-dashboard
+  htmlElementName: liferay-smart-expense-ui-dashboard
+  name: 'Smart Expense'
+  instanceable: false
+  panelAppOrder: 700
+  panelCategoryKey: site_administration.members
+  portletCategoryName: category.client-extensions
+  type: customElement
+  urls:
+    - js/main.*.js
+  useESM: true
