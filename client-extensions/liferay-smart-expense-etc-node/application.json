@@ -1,0 +1,36 @@
+{
+  "config.node.config.trees": [
+    "${LIFERAY_ROUTES_CLIENT_EXTENSION}",
+    "${LIFERAY_ROUTES_DXP}"
+  ],
+  "liferay.oauth.application.external.reference.codes": [
+    "liferay-smart-expense-etc-node-oauth-application-user-agent",
+    "liferay-smart-expense-etc-node-oauth-application-server"
+  ],
+  "main.liferay.agent.oauth.application": "liferay-smart-expense-etc-node-oauth-application-user-agent",
+  "main.liferay.server.oauth.application": "liferay-smart-expense-etc-node-oauth-application-server",
+  "ready.path": "/ready",
+  "server.port": "3001",
+  "huggingface.key": "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",
+  "liferay-smart-expense-etc-node-oauth-application-server.oauth2.authorization.uri": "/o/oauth2/authorize",
+  "liferay-smart-expense-etc-node-oauth-application-server.oauth2.headless.server.audience": "http://localhost:3001",
+  "liferay-smart-expense-etc-node-oauth-application-server.oauth2.headless.server.client.id": "id-41f868a5-ffca-b25e-0eec-6c197e84c42",
+  "liferay-smart-expense-etc-node-oauth-application-server.oauth2.headless.server.client.secret": "secret-485bb8ec-e8cd-f638-8fd7-e8c89f3eaf9",
+  "liferay-smart-expense-etc-node-oauth-application-server.oauth2.headless.server.scopes": "",
+  "liferay-smart-expense-etc-node-oauth-application-server.oauth2.introspection.uri": "/o/oauth2/introspect",
+  "liferay-smart-expense-etc-node-oauth-application-server.oauth2.jwks.uri": "/o/oauth2/jwks",
+  "liferay-smart-expense-etc-node-oauth-application-server.oauth2.redirect.uris": "/o/oauth2/redirect",
+  "liferay-smart-expense-etc-node-oauth-application-server.oauth2.token.uri": "/o/oauth2/token",
+  "liferay-smart-expense-etc-node-oauth-application-user-agent.oauth2.authorization.uri": "/o/oauth2/authorize",
+  "liferay-smart-expense-etc-node-oauth-application-user-agent.oauth2.introspection.uri": "/o/oauth2/introspect",
+  "liferay-smart-expense-etc-node-oauth-application-user-agent.oauth2.jwks.uri": "/o/oauth2/jwks",
+  "liferay-smart-expense-etc-node-oauth-application-user-agent.oauth2.redirect.uris": "/o/oauth2/redirect",
+  "liferay-smart-expense-etc-node-oauth-application-user-agent.oauth2.token.uri": "/o/oauth2/token",
+  "liferay-smart-expense-etc-node-oauth-application-user-agent.oauth2.user.agent.audience": "http://localhost:3001",
+  "liferay-smart-expense-etc-node-oauth-application-user-agent.oauth2.user.agent.client.id": "id-705c37cb-cdd3-2769-ec10-9e78d4c6a6a3",
+  "liferay-smart-expense-etc-node-oauth-application-user-agent.oauth2.user.agent.scopes": "",
+  "com.liferay.lxc.dxp.domains": "localhost:8080",
+  "com.liferay.lxc.dxp.main.domain": "localhost:8080",
+  "com.liferay.lxc.dxp.mainDomain": "localhost:8080",
+  "com.liferay.lxc.dxp.server.protocol": "http"
+}

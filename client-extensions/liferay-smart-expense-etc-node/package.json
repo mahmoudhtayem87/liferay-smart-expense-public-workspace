@@ -1,0 +1,23 @@
+{
+  "name": "liferay-smart-expense-etc-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-from-source": "lr-cx-helper build-from-source",
+    "package-linux": "lr-cx-helper node-package-linux",
+    "package-mac": "lr-cx-helper node-package-mac",
+    "package-win": "lr-cx-helper node-package-win",
+    "config": "lr-cx-helper sh-config",
+    "start": "node index.js"
+  },
+  "liferay.home": "/Users/mahmoudtayem/Documents/Liferay/Liferay-Learn-Testing/liferay-dxp",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}

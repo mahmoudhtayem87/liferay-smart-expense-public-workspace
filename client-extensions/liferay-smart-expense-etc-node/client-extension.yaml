@@ -1,0 +1,17 @@
+assemble:
+  - include:
+      - '**/*.js'
+      - application.json
+      - package.json
+liferay-smart-expense-etc-node-oauth-application-user-agent:
+  .serviceAddress: localhost:3001
+  .serviceScheme: http
+  name: Smart Expense For Liferay OAuth Application User Agent
+  scopes: []
+  type: oAuthApplicationUserAgent
+liferay-smart-expense-etc-node-oauth-application-server:
+  .serviceAddress: localhost:3001
+  .serviceScheme: http
+  name: Smart Expense For Liferay OAuth Application Server
+  scopes: []
+  type: oAuthApplicationHeadlessServer
