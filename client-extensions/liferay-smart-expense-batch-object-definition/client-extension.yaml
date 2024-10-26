@@ -1,0 +1,15 @@
+assemble:
+  - from: batch
+    into: batch
+liferay-smart-expense-batch-object-definition:
+  oAuthApplicationHeadlessServer: liferay-smart-expense-batch-object-definition-oauth-application-headless-server
+  name: Smart Expense For Liferay Object Definition
+  type: batch
+liferay-smart-expense-batch-object-definition-oauth-application-headless-server:
+  .serviceAddress: localhost:8080
+  .serviceScheme: http
+  name: Smart Expense For Liferay Batch OAuth Application Headless Server
+  scopes:
+    - Liferay.Headless.Batch.Engine.everything
+    - Liferay.Object.Admin.REST.everything
+  type: oAuthApplicationHeadlessServer
